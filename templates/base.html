@@ -4,25 +4,11 @@
  <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>{% block title %}Mi Sitio{% endblock %}</title>
      <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+     <title>Django Store | {% block title %}{% endblock %}</title>
  </head>
  <body>
-     <header>
-         <h1>Mi Sitio</h1>
-         <nav>
-             <ul>
-                 <li><a href="/">Inicio</a></li>
-                 <li><a href="/products/">Productos</a></li>
-             </ul>
-         </nav>
-     </header>
-     <main>
-         {% block content %}
-         {% endblock %}
-     </main>
-     <footer>
-         <p>&copy; 2024 Mi Sitio</p>
-     </footer>
+     {% block content %}
+     {% endblock %}
  </body>
  </html>
